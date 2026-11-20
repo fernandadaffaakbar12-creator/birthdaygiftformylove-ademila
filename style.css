@@ -900,25 +900,21 @@ body {
     text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
 }
 
-/* Jarak Orbit DIPERBESAR (TranslateZ) agar 5 kartu tidak berdempetan */
+/* Jarak Orbit untuk 4 Kartu (Berdekatan namun tetap proporsional dan tidak terlalu rapat) */
 .item1 {
-    transform: rotateY(0deg) translateZ(340px);
+    transform: rotateY(0deg) translateZ(240px);
 }
 
 .item2 {
-    transform: rotateY(72deg) translateZ(340px);
+    transform: rotateY(90deg) translateZ(240px);
 }
 
 .item3 {
-    transform: rotateY(144deg) translateZ(340px);
+    transform: rotateY(180deg) translateZ(240px);
 }
 
 .item4 {
-    transform: rotateY(216deg) translateZ(340px);
-}
-
-.item5 {
-    transform: rotateY(288deg) translateZ(340px);
+    transform: rotateY(270deg) translateZ(240px);
 }
 
 /* =========================================
@@ -1194,8 +1190,39 @@ body {
     box-sizing: border-box;
 }
 
+.video-section-header {
+    margin-bottom: 18px;
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 0 10px;
+}
+
 .video-section-title {
-    margin-bottom: 25px;
+    font-family: 'Caveat', cursive;
+    font-size: 2.6rem !important;
+    font-weight: 600;
+    color: #c71585;
+    margin-bottom: 4px !important;
+    line-height: 1.15;
+    letter-spacing: 1px;
+    background: none;
+    border: none;
+    text-shadow: 0 2px 12px rgba(255, 255, 255, 0.9), 0 0 20px rgba(255, 182, 193, 0.7);
+}
+
+.video-section-subtitle {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.95rem;
+    font-style: italic;
+    font-weight: 400;
+    color: #5a0022;
+    letter-spacing: 0.8px;
+    opacity: 0.85;
+    margin: 0;
+    background: none;
+    border: none;
+    text-shadow: 0 1px 8px rgba(255, 255, 255, 0.85);
 }
 
 .video-container {
@@ -1669,25 +1696,21 @@ body {
         font-size: 0.95rem;
     }
 
-    /* Menyesuaikan jarak orbit 5 kartu di HP */
+    /* Menyesuaikan jarak orbit 4 kartu di HP */
     .item1 {
-        transform: rotateY(0deg) translateZ(200px);
+        transform: rotateY(0deg) translateZ(165px);
     }
 
     .item2 {
-        transform: rotateY(72deg) translateZ(200px);
+        transform: rotateY(90deg) translateZ(165px);
     }
 
     .item3 {
-        transform: rotateY(144deg) translateZ(200px);
+        transform: rotateY(180deg) translateZ(165px);
     }
 
     .item4 {
-        transform: rotateY(216deg) translateZ(200px);
-    }
-
-    .item5 {
-        transform: rotateY(288deg) translateZ(200px);
+        transform: rotateY(270deg) translateZ(165px);
     }
 
     #main-content {
@@ -1748,6 +1771,18 @@ body {
     .video-section {
         padding: 20px 10px;
         margin-bottom: 50px;
+    }
+
+    .video-section-header {
+        margin-bottom: 14px;
+    }
+
+    .video-section-title {
+        font-size: 2rem !important;
+    }
+
+    .video-section-subtitle {
+        font-size: 0.82rem;
     }
 
     .video-container {
