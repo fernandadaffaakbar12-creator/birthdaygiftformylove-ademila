@@ -245,7 +245,7 @@
         const pinPopupClose = document.getElementById('pin-popup-close');
 
         // DEFAULT PIN: Silakan ubah angka ini jika ingin PIN lain
-        const SECRET_PIN = "2107";
+        const SECRET_PIN = "2511";
 
         let pinAttempt = 0;
         let popupTimeout = null;
@@ -357,7 +357,7 @@
                         if (pinInput.value === SECRET_PIN) {
                             // PIN BENAR
                             showPinPopup({
-                                message: 'Valid!\nLanjut yaa~',
+                                message: 'Valid!\nLanjut yaa sayang~',
                                 buttonText: 'Lanjut 💕'
                             }, true);
 
